@@ -1,0 +1,15 @@
+// src/firebase.js
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDx0odtvFvmaQIxoHiI2sIby3qNQv0V5Sg",
+  authDomain: "http://tlhomamo-ffc9e.firebaseapp.com/",
+  projectId: "tlhomamo-ffc9e",
+  storageBucket: "http://tlhomamo-ffc9e.firebasestorage.app/",
+  messagingSenderId: "11801233410",
+  appId: "1:11801233410:web:92bfdbe72d05e4ed1aff1b"
+};
+
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
